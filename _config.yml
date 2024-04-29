@@ -1,10 +1,10 @@
 # Site settings
 name: Joe Torreggiani
 email: joetorreggiani@gmail.com
-tag_line: I'm on a mission to do the most good I can do.
+tag_line: "I'm on a mission to do the most good I can do."
 #canonical_url: https://edwinexemplar.com
-keywords: "Software Engineer, JavaScript, Ruby, Startups, Agile, Software Testing"
-skills: "Technologist | Educator | Activist"
+keywords: "Software Engineer, JavaScript, Ruby, Startups, Agile, Software Testing, Sustainability, Systems Thinking"
+skills: "Engineer | Educator | Advocate"
 baseurl:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
