@@ -3,8 +3,8 @@ name: Joe Torreggiani
 email: joetorreggiani@gmail.com
 tag_line: "I'm on a mission to do the most good I can do."
 #canonical_url: https://edwinexemplar.com
-keywords: "Software Engineer, JavaScript, Ruby, Startups, Agile, Software Testing, Sustainability, Systems Thinking"
-skills: "Engineer | Educator | Advocate"
+keywords: "Staff Software Engineer, Ruby, TypeScript, React, Elixir, Fintech, Payroll, Systems Thinking, Open Source, Sustainability"
+skills: "Staff Engineer | Founder | Advocate"
 baseurl:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
@@ -17,7 +17,7 @@ social:
   - title: twitter
     url: https://twitter.com/joetorreggiani
   - title: github
-    url: https://github/jtorreggiani
+    url: https://github.com/jtorreggiani
 
 # Google webmaster tools
 google_verify:
@@ -27,11 +27,13 @@ bing_verify:
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 487eb0
-  primary-rgb: "33, 150, 243"
-  secondary: 2f3640
-  secondary-dark: 353b48
-  section-tout: dcdde1
+  primary: "2563eb"
+  primary-rgb: "37, 99, 235"
+  primary-light: "3b82f6"
+  primary-dark: "1d4ed8"
+  secondary: "0f172a"
+  secondary-dark: "020617"
+  section-bg: "f8fafc"
 
 # Build settings
 markdown: kramdown
