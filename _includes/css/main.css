@@ -769,6 +769,19 @@ p, li {
 @media (max-width: 600px) {
   .blog-grid {
     grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+
+  .blog-card {
+    padding: var(--space-md);
+  }
+
+  .blog-card-title {
+    font-size: 1rem;
+  }
+
+  .blog-card-excerpt {
+    font-size: 0.85rem;
   }
 }
 
@@ -884,6 +897,26 @@ p, li {
 
   .post-title {
     font-size: 1.75rem;
+  }
+
+  .post-content {
+    padding: var(--space-xl) 0;
+  }
+
+  .post .container--narrow {
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+  }
+
+  .post-content pre {
+    margin-left: calc(-1 * var(--space-sm));
+    margin-right: calc(-1 * var(--space-sm));
+    border-radius: 0;
+  }
+
+  .post-content blockquote {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
