@@ -1,10 +1,10 @@
 # Site settings
 name: Joe Torreggiani
 email: joetorreggiani@gmail.com
-tag_line: "I'm on a mission to do the most good I can do."
+tag_line: "Building technology that matters."
 #canonical_url: https://edwinexemplar.com
-keywords: "Staff Software Engineer, Ruby, TypeScript, React, Elixir, Fintech, Payroll, Systems Thinking, Open Source, Sustainability"
-skills: "Staff Engineer | Founder | Advocate"
+keywords: "Senior Software Engineer, Ruby, TypeScript, React, Elixir, Fintech, Payroll, Systems Thinking, Open Source, Sustainability"
+skills: "Engineer | Educator | Leader"
 baseurl:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
@@ -27,13 +27,16 @@ bing_verify:
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: "2563eb"
-  primary-rgb: "37, 99, 235"
-  primary-light: "3b82f6"
-  primary-dark: "1d4ed8"
-  secondary: "0f172a"
-  secondary-dark: "020617"
-  section-bg: "f8fafc"
+  primary: "171717"
+  primary-rgb: "23, 23, 23"
+  primary-light: "404040"
+  primary-dark: "000000"
+  secondary: "171717"
+  secondary-dark: "000000"
+  section-bg: "fafafa"
+
+# Blog settings
+excerpt_separator: "\n\n"
 
 # Build settings
 markdown: kramdown

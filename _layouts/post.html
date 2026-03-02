@@ -1,0 +1,20 @@
+---
+layout: base
+---
+
+<article class="post">
+  <header class="post-header">
+    <div class="container container--narrow">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%B %-d, %Y" }}
+      </time>
+    </div>
+  </header>
+  <div class="post-content container container--narrow">
+    {{ content }}
+  </div>
+  <footer class="post-footer container container--narrow">
+    <a href="{{ site.baseurl }}/#blog" class="post-back-link">&larr; Back to all posts</a>
+  </footer>
+</article>

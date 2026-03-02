@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.name }} — {{ site.skills }}{% endif %}">
+    <meta name="keywords" content="{{ site.keywords }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.canonical_url }}">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/icon.png" sizes="16x16">
+
+    <!-- Theme (prevent flash of wrong theme) -->
+    <script>
+      (function() {
+        var saved = localStorage.getItem('theme');
+        if (saved) {
+          document.documentElement.setAttribute('data-theme', saved);
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    {% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
+    {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
+  </head>
+  <body id="page-top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    {% include nav.html %}
+
+    <main id="main-content">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <script src="{{ site.baseurl }}/js/main.js"></script>
+  </body>
+</html>
