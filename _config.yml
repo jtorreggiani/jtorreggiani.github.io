@@ -1,7 +1,7 @@
 # Site settings
 name: Joe Torreggiani
 email: joetorreggiani@gmail.com
-tag_line: "Building technology that matters."
+tag_line: "Thinking in systems. Building with purpose."
 #canonical_url: https://edwinexemplar.com
 keywords: "Senior Software Engineer, Ruby, TypeScript, React, Elixir, Fintech, Payroll, Systems Thinking, Open Source, Sustainability"
 skills: "Engineer | Educator | Leader"
@@ -14,8 +14,6 @@ social:
     url: https://www.linkedin.com/in/joetorreggiani/
   - title: medium
     url: https://medium.com/@jtorreggiani
-  - title: twitter
-    url: https://twitter.com/joetorreggiani
   - title: github
     url: https://github.com/jtorreggiani
 

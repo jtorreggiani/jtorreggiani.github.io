@@ -251,18 +251,6 @@ p, li {
   align-items: center;
 }
 
-.nav-brand {
-  font-weight: 700;
-  font-size: 1.25rem;
-  color: var(--color-text);
-  text-decoration: none;
-  letter-spacing: -0.01em;
-}
-
-.nav-brand:hover {
-  color: var(--color-primary);
-}
-
 .nav-links {
   display: flex;
   gap: var(--space-lg);
