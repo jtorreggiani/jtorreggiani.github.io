@@ -21,7 +21,7 @@ What connects everything I've done is a belief that technology should serve peop
 
 Along the way, I've been an engineering manager, a mentor, a guest lecturer, and an advocate for mental health and suicide prevention awareness. I co-founded the [Sustainable Progress and Equality Collective (SPEC)](https://specollective.org), an open learning collective that provides diverse communities the resources and opportunities to build skills, develop careers, and become leaders of sustainable social impact.
 
-Today I run [Integrative R&D](https://integrative.dev), a multidisciplinary consulting practice helping teams and organizations solve complex technical and organizational challenges.
+Today I run [Integrative R&D](https://integrativernd.com), a multidisciplinary consulting practice helping teams and organizations solve complex technical and organizational challenges.
 
 ## What to expect here
 
