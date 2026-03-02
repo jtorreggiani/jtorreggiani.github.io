@@ -479,29 +479,25 @@ p, li {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 9rem 0 5rem;
+    padding: 7rem 0 3rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn {
+    text-align: center;
   }
 }
 
 /* ============================================
    6. About Section
    ============================================ */
-.about-grid {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: var(--space-3xl);
-  align-items: start;
-}
-
-.about-image-wrap {
-  position: sticky;
-  top: 6rem;
-}
-
-.about-image {
-  width: 100%;
-  border-radius: var(--radius-lg);
-  box-shadow: 0 8px 32px rgba(var(--color-shadow), 0.1);
+.about-content {
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 .about-content p {
@@ -513,27 +509,6 @@ p, li {
 
 .about-content p:last-child {
   margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-  .about-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-xl);
-    text-align: center;
-  }
-
-  .about-image-wrap {
-    position: static;
-  }
-
-  .about-image {
-    max-width: 200px;
-    margin: 0 auto;
-  }
-
-  .about-content {
-    text-align: left;
-  }
 }
 
 /* ============================================
@@ -1075,6 +1050,28 @@ p, li {
 .section.revealed {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ============================================
+   13d. Mobile Optimizations
+   ============================================ */
+@media (max-width: 768px) {
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .section-heading {
+    margin-bottom: var(--space-lg);
+    font-size: 1.5rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1.75rem;
+  }
 }
 
 /* ============================================
