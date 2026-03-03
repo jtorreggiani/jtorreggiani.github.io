@@ -3,7 +3,7 @@ install:
     bundle install
 
 # Serve locally with live reload (http://localhost:4000)
-serve:
+start:
     bundle exec jekyll serve
 
 # Build static site to _site/
