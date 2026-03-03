@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal website for Joe Torreggiani, served at **joetorreggiani.com** via GitHub Pages. Based on [Chuck Groom's one-page bio template](https://github.com/chuckgroom/onepage-bio). Single-page portfolio/resume site with no blog or collections.
+Personal website for Joe Torreggiani, served at **joetorreggiani.com** via GitHub Pages. Based on [Chuck Groom's one-page bio template](https://github.com/chuckgroom/onepage-bio). Single-page portfolio/resume site. Blog infrastructure exists (`_posts/`, `_includes/blog_grid.html`, `_layouts/post.html`) but is currently **commented out** in `_layouts/default.html` and `_includes/nav.html` while the first post is being refined.
 
 ## Build & Development
 

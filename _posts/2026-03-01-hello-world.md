@@ -5,28 +5,24 @@ date: 2026-03-01
 description: "An introduction to who I am, what drives me, and what I'll be writing about."
 ---
 
-Hi, I'm Joe. Welcome to my corner of the internet.
-
-I'm a software engineer, educator, and leader with over 13 years of experience building technology across edtech, sustainability, and fintech. But the work I care about most doesn't fit neatly into a job title.
+Hi, I'm Joe. I live in upstate New York with my wife Veronica and our dog Molly. I'm a software engineer and someone who has spent most of his life trying to figure out how to be genuinely useful in the world. Welcome to my corner of it.
 
 ## How I got here
 
-My path to software was unconventional. I started as a history and philosophy student, drawn to the big questions about how societies change and what we owe each other. Studying environmental ethics shifted something in me. I saw the scale of the challenges facing the world and felt compelled to act.
+My path to software was unconventional. I studied history and environmental ethics in college, which made me a systems thinker and gave me a deep awareness of the challenges facing the world.
 
-I enrolled in a political science master's program to study environmental policy, but quickly realized that understanding complex problems required crossing disciplinary boundaries. I left the program and began a period of intensive self-directed learning in STEM, working through math, physics, and computer science, which eventually led me to software development.
+After my bachelor's degree, I went back to school to pursue medicine, taking the science prerequisites and training as an EMT along the way. I saved some lives in that work, but I also saw firsthand how heavy the emotional toll of emergency medicine can be. Around the same time, I read Peter Singer's *The Most Good You Can Do* and discovered effective altruism — the idea of using evidence and reason to figure out how to do the most good. It pushed me to ask a question that's guided me ever since: what is the biggest impact I can make with my career? I saw software becoming embedded in every industry — core to sustainable technologies, advanced medicine, and reaching people at scale. That was my answer, and it's what committed me to engineering.
 
 ## The through line
 
-What connects everything I've done is a belief that technology should serve people. At Square, I spent five and a half years building payroll systems that help small businesses take care of their employees. At Artemis, I helped build tools for sustainable agriculture. As a freelancer, I built solutions for organizations across healthcare, education, and research.
+Over the past 13 years I've worked across edtech, sustainability, and fintech — building payroll systems, tools for sustainable agriculture, platforms for learning. The roles have changed (engineer, manager, mentor, open-source contributor), but the question hasn't: how do I use what I know to alleviate suffering and help people thrive?
 
-Along the way, I've been an engineering manager, a mentor, a guest lecturer, and an advocate for mental health and suicide prevention awareness. I co-founded the [Sustainable Progress and Equality Collective (SPEC)](https://specollective.org), an open learning collective that provides diverse communities the resources and opportunities to build skills, develop careers, and become leaders of sustainable social impact.
+That question led me to co-found the [Sustainable Progress and Equality Collective (SPEC)](https://specollective.org), an open learning collective that gives diverse communities the resources and opportunities to build skills, develop careers, and become leaders of sustainable social impact. It's also why I've put time into mental health advocacy and suicide prevention awareness — because I've seen what happens when people don't get the support they need.
 
-Today I run [Integrative R&D](https://integrativernd.com), a multidisciplinary consulting practice helping teams and organizations solve complex technical and organizational challenges.
+Today I run [Integrative R&D](https://integrativernd.com), a consulting practice that helps teams and organizations work through complex technical and organizational challenges. The work is multidisciplinary by design, because the problems worth solving usually are.
 
 ## What to expect here
 
-I plan to write about the things I think about most. Engineering and the craft of building production systems. Systems thinking and understanding how the parts relate to the whole. Using technology to address real problems. Growing people and teams through leadership and mentorship. And building in public through open source and open learning, because I believe shared knowledge is how we move forward together.
+I want this space to be where I think out loud about the things that matter most to me — the craft of engineering, systems thinking, what it means to build technology that actually serves people, and how inner work and outer work are part of the same practice. I'll write about leadership and mentorship, open source and open learning, and the messy reality of trying to do meaningful work in a complex world.
 
-This blog is a space for me to think out loud, share what I'm learning, and connect with others who care about using technology as a force for good.
-
-Thanks for reading. More soon.
+If any of that resonates, I'm glad you're here. I believe shared knowledge is how we move forward together, and I'd rather build in the open than figure it out alone.
