@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Hello World"
+title: "Why I Build Software for Social Impact"
 date: 2026-03-01
-description: "An introduction to who I am, what drives me, and what I'll be writing about."
+modified: 2026-07-07
+description: "I'm Joe Torreggiani — a software engineer in upstate New York. This blog is where I write about building technology that serves people, systems thinking, and the work of doing good in the world."
+tags: [introduction, about, software engineering, effective altruism]
 ---
 
 Hi, I'm Joe. I live in upstate New York with my wife Veronica and our dog Molly. I'm a software engineer and someone who has spent most of his life trying to figure out how to be genuinely useful in the world. Welcome to my corner of it.
@@ -11,7 +13,7 @@ Hi, I'm Joe. I live in upstate New York with my wife Veronica and our dog Molly.
 
 My path to software was unconventional. I studied history and environmental ethics in college, which made me a systems thinker and gave me a deep awareness of the challenges facing the world.
 
-After my bachelor's degree, I went back to school to pursue medicine, taking the science prerequisites and training as an EMT along the way. I saved some lives in that work, but I also saw firsthand how heavy the emotional toll of emergency medicine can be. Around the same time, I read Peter Singer's *The Most Good You Can Do* and discovered effective altruism — the idea of using evidence and reason to figure out how to do the most good. It pushed me to ask a question that's guided me ever since: what is the biggest impact I can make with my career? I saw software becoming embedded in every industry — core to sustainable technologies, advanced medicine, and reaching people at scale. That was my answer, and it's what committed me to engineering.
+After my bachelor's degree, I went back to school to pursue medicine, taking the science prerequisites and training as an EMT along the way. I witnessed first-hand how much emergency care can matter — and how heavy the emotional toll of that work can be. Around the same time, I read Peter Singer's *The Most Good You Can Do* and discovered effective altruism — the idea of using evidence and reason to figure out how to do the most good. It pushed me to ask a question that's guided me ever since: what is the biggest impact I can make with my career? I saw software becoming embedded in every industry — core to sustainable technologies, advanced medicine, and reaching people at scale. That was my answer, and it's what committed me to engineering.
 
 ## The through line
 
@@ -26,3 +28,5 @@ Today I run [Integrative R&D](https://integrativernd.com), a consulting practice
 I want this space to be where I think out loud about the things that matter most to me — the craft of engineering, systems thinking, what it means to build technology that actually serves people, and how inner work and outer work are part of the same practice. I'll write about leadership and mentorship, open source and open learning, and the messy reality of trying to do meaningful work in a complex world.
 
 If any of that resonates, I'm glad you're here. I believe shared knowledge is how we move forward together, and I'd rather build in the open than figure it out alone.
+
+**What I'm working on right now:** [Integrative R&D](https://integrativernd.com) — helping teams navigate complex technical and organizational challenges. If that's something you're facing, or if you just want to chat about systems thinking and software, [reach out](mailto:hello@joetorreggiani.com).
