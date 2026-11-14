@@ -47,3 +47,17 @@ excerpt_separator: "\n\n"
 markdown: kramdown
 permalink: pretty
 port: 4077
+
+# Development files must not be processed as Liquid templates or published.
+# Without this, Jekyll renders CLAUDE.md/README.md and any Liquid-looking text
+# in them ({% ... %}) becomes a hard build error on GitHub Pages.
+exclude:
+  - CLAUDE.md
+  - README.md
+  - LICENCE
+  - Gemfile
+  - Gemfile.lock
+  - justfile
+  - screenshot.png
+  - vendor
+  - .jekyll-cache
