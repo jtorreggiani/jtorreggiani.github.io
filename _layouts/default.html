@@ -5,16 +5,16 @@ layout: base
 <!-- Hero -->
 <header class="hero">
   <div class="container">
-    <div class="hero-eyebrow">{{ site.skills }}</div>
+    <p class="hero-eyebrow">{{ site.skills }}</p>
     <h1 class="hero-name">{{ site.name }}</h1>
     <p class="hero-tagline">{{ site.tag_line }}</p>
     <div class="hero-actions">
-      <a href="#about" class="btn btn-primary">Learn more</a>
+      <a href="#about" class="btn btn-primary">Read about me</a>
       <a href="#contact" class="btn btn-outline">Get in touch</a>
     </div>
   </div>
 </header>
 
 {% include about_me.html %}
-<!-- {% include blog_grid.html %} -->
+{% if site.blog_enabled %}{% include blog_grid.html %}{% endif %}
 {% include contact.html %}

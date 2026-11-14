@@ -1,20 +1,22 @@
-<section class="section" id="blog">
+<section class="section" id="blog" aria-labelledby="blog-heading">
   <div class="container">
-    <h2 class="section-heading">Blog</h2>
+    <h2 class="section-heading" id="blog-heading">Blog</h2>
     {% if site.posts.size > 0 %}
-    <div class="blog-grid">
+    <ul class="blog-grid" role="list">
       {% for post in site.posts limit:6 %}
-      <a href="{{ post.url | prepend: site.baseurl }}" class="blog-card">
-        <article>
+      <li>
+        <article class="blog-card">
           <time class="blog-card-date" datetime="{{ post.date | date_to_xmlschema }}">
             {{ post.date | date: "%B %-d, %Y" }}
           </time>
-          <h3 class="blog-card-title">{{ post.title }}</h3>
+          <h3 class="blog-card-title">
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h3>
           <p class="blog-card-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
         </article>
-      </a>
+      </li>
       {% endfor %}
-    </div>
+    </ul>
     {% else %}
     <p class="blog-empty">Posts coming soon.</p>
     {% endif %}

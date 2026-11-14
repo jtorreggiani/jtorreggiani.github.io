@@ -6,15 +6,21 @@ layout: base
   <header class="post-header">
     <div class="container container--narrow">
       <h1 class="post-title">{{ page.title }}</h1>
-      <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
-        {{ page.date | date: "%B %-d, %Y" }}
-      </time>
+      <p class="post-date">
+        <span class="visually-hidden">Published </span>
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      </p>
     </div>
   </header>
+
   <div class="post-content container container--narrow">
     {{ content }}
   </div>
+
   <footer class="post-footer container container--narrow">
-    <a href="{{ site.baseurl }}/#blog" class="post-back-link">&larr; Back to all posts</a>
+    <a href="{% if site.blog_enabled %}{{ site.baseurl }}/#blog{% else %}{{ site.baseurl }}/{% endif %}" class="post-back-link">
+      <span aria-hidden="true">&larr;</span>
+      Back to {% if site.blog_enabled %}all posts{% else %}the home page{% endif %}
+    </a>
   </footer>
 </article>

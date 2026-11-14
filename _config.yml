@@ -2,7 +2,8 @@
 name: Joe Torreggiani
 email: joetorreggiani@gmail.com
 tag_line: "Thinking in systems. Building with purpose."
-#canonical_url: https://edwinexemplar.com
+canonical_url: https://joetorreggiani.com
+description: "Joe Torreggiani is a senior software engineer, educator, and leader working across fintech, sustainability, and open source."
 keywords: "Senior Software Engineer, Ruby, TypeScript, React, Elixir, Fintech, Payroll, Systems Thinking, Open Source, Sustainability"
 skills: "Engineer | Educator | Leader"
 baseurl:
@@ -32,8 +33,14 @@ color:
   secondary: "171717"
   secondary-dark: "000000"
   section-bg: "fafafa"
+  # Lowest-contrast text tone still used for real content (dates, locations).
+  # Keep at or above 4.5:1 on section-bg — see muted tokens in _includes/css/main.css.
 
 # Blog settings
+# Flip to true to publish the blog: adds the nav link, the Blog section on the
+# home page, and the feed discovery link. While false, posts in _posts/ still
+# build to their own URLs but are not linked from anywhere.
+blog_enabled: false
 excerpt_separator: "\n\n"
 
 # Build settings
