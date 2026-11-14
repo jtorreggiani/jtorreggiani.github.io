@@ -559,14 +559,19 @@ p, li {
 /* ============================================
    8. Contact
    ============================================ */
-.contact-text {
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+}
+
+.contact-text {
   color: var(--color-text-secondary);
   margin-bottom: var(--space-md);
 }
 
 .contact-email {
-  text-align: center;
   margin: 0;
 }
 
