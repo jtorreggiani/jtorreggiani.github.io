@@ -557,48 +557,17 @@ p, li {
 }
 
 /* ============================================
-   8. Contact Form
+   8. Contact
    ============================================ */
-.form-group {
+.contact-text {
+  text-align: center;
+  color: var(--color-text-secondary);
   margin-bottom: var(--space-md);
 }
 
-.form-group label {
-  display: block;
-  font-weight: 500;
-  font-size: 0.875rem;
-  color: var(--color-text-secondary);
-  margin-bottom: var(--space-xs);
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  font-family: var(--font-sans);
-  font-size: 1rem;
-  color: var(--color-text);
-  background: var(--color-bg-elevated);
-  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
-}
-
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: var(--color-text-muted);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 4px rgba(var(--color-primary-rgb), 0.12);
-}
-
-.form-group input:invalid:not(:placeholder-shown),
-.form-group textarea:invalid:not(:placeholder-shown) {
-  border-color: var(--color-error);
+.contact-email {
+  text-align: center;
+  margin: 0;
 }
 
 .btn {

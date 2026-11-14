@@ -33,7 +33,6 @@ No CI/CD configuration — GitHub Pages builds automatically on push to `main`.
 **Content sections** (in `_includes/`):
 - `about_me.html` — Bio narrative (#about)
 - `interests.html` — Skills, projects, research areas, personal interests grid (#interests)
-- `contact_form.html` — Contact form using Formspree at `//formspree.io/{{ site.email }}` (#contact)
 
 **CSS/JS stack:**
 - Bootstrap 3.2.0 (Bootswatch Flatly theme) — in `_includes/css/bootstrap.min.css`
@@ -42,7 +41,6 @@ No CI/CD configuration — GitHub Pages builds automatically on push to `main`.
 - jQuery 1.11.0, Bootstrap JS, jQuery Easing — in `js/`
 - `js/freelancer.js` — Smooth scrolling, floating labels, navbar scroll spy, mobile menu toggle
 - `js/cbpAnimatedHeader.js` — Navbar shrink-on-scroll effect
-- `js/contact_me_static.js` — Client-side form validation (the active contact handler)
 
 ## Key Details
 
