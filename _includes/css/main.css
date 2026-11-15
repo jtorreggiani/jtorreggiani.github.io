@@ -1442,3 +1442,52 @@ html.js.reveal-enabled .section.revealed {
     box-shadow: none;
   }
 }
+
+/* ============================================
+   22. Resume page intro
+
+   The resume leads with name, contact, and a single executive summary
+   paragraph instead of a title/subtitle pair. The summary is left-aligned
+   inside the centred block — a centred block of running prose is hard to
+   track line to line.
+   ============================================ */
+.resume-intro {
+  text-align: center;
+}
+
+.resume-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-md);
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-lg);
+  font-size: 0.95rem;
+}
+
+.resume-contact a {
+  display: inline-block;
+  padding: 0.35rem 0;
+  min-height: 24px;
+  color: var(--color-primary);
+}
+
+.resume-summary {
+  text-align: left;
+  color: var(--color-text-secondary);
+  margin: 0 auto;
+  max-width: 42rem;
+}
+
+/* The in-page TOC defaults to the wide container; on narrow pages it has to
+   line up with the content column beneath it. */
+.page-toc--narrow {
+  max-width: var(--max-width-narrow);
+}
+
+@media (max-width: 768px) {
+  .resume-contact {
+    gap: var(--space-sm) var(--space-md);
+  }
+}
