@@ -1,128 +1,101 @@
 ---
 layout: page
 title: Work
-subtitle: "A working history, told in chapters — most recent first."
-description: "The story of Joe Torreggiani's career — founding companies, fintech at scale, engineering leadership, and how it all started."
+description: "What Joe Torreggiani does: software engineering, engineering management, technology program management, teaching and mentoring, and AI."
 ---
 
-<nav class="page-toc page-toc--narrow" aria-label="On this page">
-  <h2 class="page-toc-heading">On this page</h2>
-  <ul role="list">
-    <li><a href="#story">The story</a></li>
-    <li><a href="#interests">Research &amp; interests</a></li>
-  </ul>
-</nav>
-
-<section class="section" id="story" aria-label="Career story">
+<section class="section" id="skills" aria-label="Core skills">
   <div class="container">
     <div class="story">
 
-      <article class="story-chapter">
-        <p class="story-era">2020 — present</p>
-        <h2>Building my own things</h2>
+      <article class="story-chapter" id="software-engineering">
+        <h2>Software Engineering</h2>
         <p>
-          In 2026 I left Square to co-found <a href="https://serspace.com">Serspace Labs</a> &mdash;
-          the newest chapter, and the one I'm writing now. It's the latest in a thread that
-          started in 2020, when I co-founded the
-          <a href="https://specollective.org">Sustainable Progress and Equality Collective</a>,
-          an open learning collective that has channeled over $300K into open-source projects
-          and career training for underrepresented communities &mdash; including $80K of my own.
-          A two-year partnership with the RAND Corporation's Center to Advance Racial Equity
-          Policy produced microcredentials, socio-cultural gaming research, and an intern
-          program that placed half its participants into tech roles.
+          <!-- TODO: one or two sentences on how you approach building software — what you
+               reach for, what you care about, what kind of problem you want handed to you. -->
+          Most of my career has been spent on the parts of a product that other people's
+          work depends on: the APIs, the data models, and the surfaces that have to stay
+          fast while the system behind them changes.
         </p>
-        <p>
-          Alongside both, since 2023 I've run <a href="https://integrativernd.com">Integrative R&amp;D</a>,
-          a consulting practice for teams facing meaningful technical challenges.
-        </p>
+        <ul class="timeline-highlights" role="list">
+          <li>Led the overhaul of Square's Payroll overview page and action center end to end &mdash; a team of three moving a legacy JavaScript client to TypeScript React and Protobuf APIs, cutting page loads from 10&ndash;20 seconds to under 3. I wrote the engineering design, the pay runs Protobuf API, and the client data-fetching architecture, and the patterns became the basis for the rest of Payroll's React migration.</li>
+          <li>Architected the frontend of Payroll's setup guide, raising the rate at which new sellers sent their first payroll by 10&ndash;15%; the implementation became the template other Square teams used for their own setup guides.</li>
+          <li>Spearheaded breaking up Artemis's Rails monolith behind a JSON:API, led development of its React Native app for growers, and wrote the open-source data-fetching and state management library shared across its web and mobile clients.</li>
+          <li>Migrated Verba's flagship course-materials client from Backbone to React, built the student-facing portal, and integrated billing with an enterprise student information system &mdash; automating reconciliation for university accounts receivable departments moving millions of dollars.</li>
+          <li>Built a Ruby GIS application for a citizen-science project in Plymouth, England: volunteers photographed trees in the city's central park, the app derived coordinates from the images, and MapboxGL rendered the spatial data.</li>
+          <!-- TODO: a current Serspace Labs project, and anything from Integrative R&D you can talk about publicly. -->
+        </ul>
       </article>
 
-      <article class="story-chapter">
-        <p class="story-era">2020 — 2026</p>
-        <h2>Scale at Square</h2>
+      <article class="story-chapter" id="engineering-management">
+        <h2>Engineering Management</h2>
         <p>
-          Before that, five and a half years as a staff engineer in
-          <a href="https://squareup.com">Square</a>'s Payroll domain taught me what software
-          looks like when real businesses depend on it every pay cycle. I led a team of three
-          to rebuild the Run Payroll page from legacy JavaScript to TypeScript React and
-          Protobuf APIs, taking page loads from more than 20 seconds to under 3 for our
-          largest sellers. I also led the Free Trial Experiment, introducing A/B testing to
-          the domain and driving a roughly 20% increase in monthly recurring revenue.
+          <!-- TODO: your management philosophy in your own words — two or three sentences. -->
+          I came away from managing convinced that most "technical" problems on a team are
+          really communication problems wearing a disguise, and that the manager's job is
+          mostly to make the real constraints visible to everyone at once.
         </p>
-        <p>
-          The work I'm proudest of there wasn't code: as Bay Area chair of Square's
-          Neurodiversity Community, I helped grow it from 100 members to 1,000, leading
-          events on workplace inclusion and mental health.
-        </p>
+        <ul class="timeline-highlights" role="list">
+          <li>Ran a team of ten as engineering manager at Artemis &mdash; interviews, mentorship, training, and performance reviews &mdash; and ran the daily meeting that kept priorities aligned across product, customer success, and sales.</li>
+          <li>Refined how that team gathered requirements, estimated work, and handled QA, with engineering effort pointed at platform stability, performance, and UX.</li>
+          <li>Led a team of three at Square through a multi-quarter rewrite of a revenue-critical payroll surface, and reviewed more than 750 pull requests across the Payroll codebase.</li>
+          <li>Coordinate SPEC's distributed contributor teams as collective administrator &mdash; engineers, designers, project managers, curators, and researchers working across more than a dozen open-source and research projects.</li>
+          <!-- TODO: how you hire, run 1:1s, or handle underperformance — this is what hiring
+               managers read this section for. -->
+        </ul>
       </article>
 
-      <article class="story-chapter">
-        <p class="story-era">2018 — 2020</p>
-        <h2>Leading teams at Artemis</h2>
+      <article class="story-chapter" id="program-management">
+        <h2>Technology Program Management</h2>
         <p>
-          At <a href="https://www.artemisag.com">Artemis</a>, an agtech company building
-          cultivation management software, I got to combine engineering with the
-          sustainability questions that drew me to this work in the first place. I
-          spearheaded breaking up the Rails monolith behind a JSON:API, led development of a
-          React Native mobile app for growers, and published an open-source state management
-          library used across our web and mobile clients.
+          <!-- TODO: how you think about running a program vs. shipping a project. -->
+          The work I enjoy most sits between teams: figuring out what a program is actually
+          trying to prove, who has to agree for it to land, and what the first measurable
+          step is.
         </p>
-        <p>
-          It's also where I learned to lead. As engineering manager I ran a team of ten &mdash;
-          interviews, mentorship, performance reviews, and the daily work of coordinating
-          priorities between product, customer success, and sales. I came away convinced that
-          most "technical" problems on a team are really communication problems wearing a
-          disguise.
-        </p>
+        <ul class="timeline-highlights" role="list">
+          <li>Administer SPEC, a nonprofit collective run with full financial transparency from day one: $290K raised and distributed to community members, 28 career placements, 15 completed projects, and 7 partner organizations.</li>
+          <li>Established and ran a two-year partnership between SPEC and the RAND Corporation's Center to Advance Racial Equity Policy, covering microcredentials, socio-cultural gaming research, and a research intern program.</li>
+          <li>Led Square's Payroll free trial experiment end to end &mdash; introducing A/B testing with Optimizely and partnering with the SaaS team on subscription flows &mdash; driving a ~20% increase in monthly recurring revenue.</li>
+          <li>Joined a stalled cross-team payroll program months behind schedule, restructured it around iterative milestones with frontend and backend built in parallel, and shipped it three months ahead of the revised forecast &mdash; cutting onboarding support tickets 20&ndash;30%.</li>
+          <li>Delivered an automated, FDA-compliant interactive voice response system for a Fortune 500 pharmaceutical product release &mdash; two months ahead of schedule and $15K under budget.</li>
+        </ul>
       </article>
 
-      <article class="story-chapter">
-        <p class="story-era">2013 — 2017</p>
-        <h2>Learning the craft</h2>
+      <article class="story-chapter" id="teaching-mentoring">
+        <h2>Teaching &amp; Mentoring</h2>
         <p>
-          In 2015 I joined Verba, an edtech startup in San Francisco, as a core contributor
-          to the frontend of its flagship course-materials product. I led the migration from
-          Backbone to React, built a student-facing portal, and integrated our billing with
-          a major enterprise student information system &mdash; automating reconciliation work
-          that moved millions of dollars through university accounts receivable departments.
-          Verba was acquired by VitalSource while I was there, my first time seeing a startup
-          through to an exit.
+          <!-- TODO: why teaching matters to you, and who you most want to teach. -->
+          Teaching is the thread that runs through everything else I do &mdash; most of the
+          projects I'm proudest of exist to get someone else their first real shot at this
+          work.
         </p>
-        <p>
-          The freelance years around it taught me range. I built an automated, FDA-compliant
-          interactive voice response system for a Fortune 500 pharmaceutical company's
-          product release &mdash; delivered two months early and $15K under budget &mdash; and,
-          at the other end of the spectrum, a Ruby GIS application that let volunteers in
-          Plymouth, England map the planting and health of trees in their city's central
-          park. That citizen-science project is still one of my favorites: ordinary people
-          with phones, producing real spatial data about their own neighborhood.
-        </p>
+        <ul class="timeline-highlights" role="list">
+          <li>Co-founded SPEC in 2020 with Dr. Rhianna Rogers, after COVID cut the funding for her decade-long Buffalo Project research into how cultural data shapes learning. I covered a student researcher's salary to keep the work going, and we built an organization around it.</li>
+          <li>SPEC has since placed 28 people in careers through paid internships, microcredentials, and game-based learning programs. I've personally donated $80K toward funding those opportunities.</li>
+          <li>Started staff-level DRI office hours at Square, and mentored engineers across teams there &mdash; including three through the Socially Responsible Engineering Mentorship Circle, and a junior engineer who went on to ship critical components of the Payroll setup guide independently.</li>
+          <li>Grew Square's Neurodiversity Community from 100 to 1,000 members as Bay Area chair, running events on mental health, LGBTQ+ experience, and psychological safety at work.</li>
+          <li>Guest lectured on environmental physics and sustainable technologies at the State University of New York at Albany.</li>
+        </ul>
       </article>
 
-      <article class="story-chapter">
-        <p class="story-era">2012 — 2013</p>
-        <h2>Construction sites to code</h2>
+      <article class="story-chapter" id="ai-ml">
+        <h2>AI &amp; Machine Learning</h2>
         <p>
-          It all started somewhere unexpected: my first real job out of college had nothing
-          to do with software. I was a project management assistant at a construction firm
-          in Poughkeepsie, New York, working on multimillion-dollar projects &mdash; at one
-          point writing the EPA-mandated spill prevention plan that protected an endangered
-          turtle species living next to one of our sites. A history degree turns out to be
-          decent preparation for construction paperwork: both are mostly about understanding
-          how systems of people, rules, and materials actually behave.
+          <!-- TODO: in your own words — what drew you to AI in college, and what you
+               think about it now that it's the thing everyone works on. -->
+          I've been interested in AI since college, when it was still a question about
+          minds and meaning rather than a product category. The philosophy background
+          shows in what I work on now: logic programming and symbolic reasoning on one
+          side, AI-assisted development and what it does to how teams build software on
+          the other.
         </p>
-        <p>
-          What I kept noticing was how much of the work was tracked on paper and whiteboards.
-          So I started building tools: a web-based inventory system with barcode tags, a
-          scheduling system for moving crews between sites, a drag-and-drop board for labor
-          allocation. Nobody asked me to become a programmer &mdash; the problems did. In 2013
-          I made it official with a back-end web development program at General Assembly in
-          New York City, and the construction firm became my first software client.
-        </p>
-        <p>
-          If you want the chronological ledger &mdash; titles, dates, and bullet points &mdash;
-          that lives on my <a href="{{ site.baseurl }}/resume/">resume</a>.
-        </p>
+        <ul class="timeline-highlights" role="list">
+          <li>Early contributor to <a href="https://github.com/block/goose">Goose</a>, Block's open-source AI agent harness.</li>
+          <li>Built <a href="https://github.com/jtorreggiani/lam">LAM</a>, an abstract machine for logic programming and automated reasoning, in Rust.</li>
+          <li>Contributor to <a href="http://tau-prolog.org">Tau Prolog</a>, a Prolog interpreter for JavaScript.</li>
+          <li>Developing the domain model at Serspace Labs.<!-- TODO: what the domain model is for — this is your current work and the most interesting item here. --></li>
+        </ul>
       </article>
 
     </div>

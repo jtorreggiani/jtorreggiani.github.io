@@ -1582,8 +1582,8 @@ html.js.reveal-enabled .section.revealed {
 /* ============================================
    23. Work page story
 
-   The work page reads as an essay in chapters rather than a timeline:
-   left-aligned headings, an era label as an eyebrow, and running prose.
+   The work page is organised by skill rather than chronology: left-aligned
+   headings and running prose, one section per skill.
    ============================================ */
 .story {
   max-width: 720px;
@@ -1594,15 +1594,6 @@ html.js.reveal-enabled .section.revealed {
   margin-top: var(--space-2xl);
   padding-top: var(--space-2xl);
   border-top: 1px solid var(--color-border);
-}
-
-.story-era {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-weight: 600;
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-xs);
 }
 
 .story-chapter h2 {
@@ -1619,11 +1610,6 @@ html.js.reveal-enabled .section.revealed {
 
 .story-chapter p:last-child {
   margin-bottom: 0;
-}
-
-.story-chapter p.story-era {
-  margin-bottom: var(--space-xs);
-  font-size: 0.8rem;
 }
 
 @media (max-width: 768px) {
