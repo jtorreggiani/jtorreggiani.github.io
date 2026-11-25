@@ -1,12 +1,13 @@
 ---
 layout: base
 title: Resume
-description: "Resume for Joe Torreggiani: executive summary, professional experience, education, and skills."
+description: "Resume for Joe Torreggiani: summary, core skills, professional experience, and education."
 ---
 
 <header class="page-header">
   <div class="container container--narrow resume-intro">
     <h1 class="page-title">{{ site.name }}</h1>
+    <p class="resume-headline">Staff Software Engineer · Founder · Educator</p>
 
     <ul class="resume-contact" role="list">
       <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
@@ -14,75 +15,95 @@ description: "Resume for Joe Torreggiani: executive summary, professional experi
       <li><a href="{{ network.url }}">{{ network.title | capitalize }}</a></li>
       {% endfor %}
     </ul>
-
-    <p class="resume-summary">
-      Software engineer, founder, and educator with more than 13 years building
-      products and leading teams across fintech, agtech, and open source. Most
-      recently a staff engineer at Square, where I led API architecture,
-      performance, and experimentation work in the Payroll domain &mdash; rebuilding
-      core surfaces in TypeScript React and driving a ~20% increase in recurring
-      revenue. Alongside that I co-founded the Sustainable Progress and Equality
-      Collective, which has channeled over $300K into open-source work and career
-      training for underrepresented communities, and I now co-found and build at
-      Serspace Labs. A background in history and philosophy shapes how I work:
-      thinking in systems, asking what a technology is actually for, and building
-      with purpose.
-    </p>
+    <!-- TODO: add a city/region line here if you want the header to carry a location. -->
   </div>
 </header>
 
 <div class="page-content">
 
-<nav class="page-toc page-toc--narrow" aria-label="On this page">
-  <h2 class="page-toc-heading">On this page</h2>
-  <ul role="list">
-    <li><a href="#resume-experience">Experience</a></li>
-    <li><a href="#resume-education">Education</a></li>
-    <li><a href="#resume-skills">Skills</a></li>
-  </ul>
-</nav>
+<section class="section" id="resume-summary" aria-labelledby="resume-summary-heading">
+  <div class="container container--narrow">
+    <h2 class="section-heading resume-section-heading" id="resume-summary-heading">Summary</h2>
+    <p class="resume-summary">
+      Software engineer, founder, and educator with more than 13 years building
+      products and leading teams across fintech, agtech, and open source. Most
+      recently a staff engineer at Square, leading API architecture, performance,
+      and experimentation work in the Payroll domain &mdash; rebuilding core surfaces
+      in TypeScript React and driving a ~20% increase in recurring revenue.
+      Co-founder of the Sustainable Progress and Equality Collective, which has
+      channeled over $300K into open-source work and career training for
+      underrepresented communities, and now co-founder and builder at Serspace
+      Labs. A background in history and philosophy shapes how I work: thinking in
+      systems, asking what a technology is actually for, and building with purpose.
+    </p>
+  </div>
+</section>
+
+<section class="section section--alt" id="resume-skills" aria-labelledby="resume-skills-heading">
+  <div class="container container--narrow">
+    <h2 class="section-heading resume-section-heading" id="resume-skills-heading">Core Skills</h2>
+    <dl class="resume-skills">
+      <div class="resume-skill-group">
+        <dt>Engineering</dt>
+        <dd>Ruby, Rails, TypeScript, React, Elixir, JavaScript</dd>
+      </div>
+      <div class="resume-skill-group">
+        <dt>Architecture</dt>
+        <dd>Systems architecture, API design, Protobuf services, data migrations</dd>
+      </div>
+      <div class="resume-skill-group">
+        <dt>Product &amp; data</dt>
+        <dd>Performance optimization, A/B experimentation (Optimizely), data-driven development</dd>
+      </div>
+      <div class="resume-skill-group">
+        <dt>Leadership</dt>
+        <dd>Engineering management, mentoring, public speaking, technical writing</dd>
+      </div>
+    </dl>
+  </div>
+</section>
 
 <section class="section" id="resume-experience" aria-labelledby="resume-experience-heading">
   <div class="container container--narrow">
-    <h2 class="section-heading" id="resume-experience-heading">Experience</h2>
+    <h2 class="section-heading resume-section-heading" id="resume-experience-heading">Professional Experience</h2>
 
     <ol class="timeline" role="list">
       <li class="timeline-item">
         <div class="timeline-header">
-          <div>
-            <h3 class="timeline-role">Co-Founder</h3>
-            <p class="timeline-company"><a href="https://serspace.com">Serspace Labs</a></p>
-          </div>
-          <p class="timeline-date"><span class="visually-hidden">Dates: </span>Feb 2026 — Present</p>
+          <h3 class="timeline-org"><a href="https://serspace.com">Serspace Labs</a></h3>
+          <p class="timeline-meta">
+            <span class="visually-hidden">Dates: </span>Feb 2026 &mdash; Present
+          </p>
         </div>
+        <p class="timeline-role">Co-Founder</p>
         <!-- TODO: summary of focus and responsibilities at Serspace Labs. -->
       </li>
 
       <li class="timeline-item">
         <div class="timeline-header">
-          <div>
-            <h3 class="timeline-role">Owner</h3>
-            <p class="timeline-company">Integrative R&amp;D · Self-employed</p>
-          </div>
-          <p class="timeline-date"><span class="visually-hidden">Dates: </span>Jun 2023 — Present</p>
+          <h3 class="timeline-org">Integrative R&amp;D</h3>
+          <p class="timeline-meta">
+            <span class="visually-hidden">Location: </span>Remote ·
+            <span class="visually-hidden">Dates: </span>Jun 2023 &mdash; Present
+          </p>
         </div>
-        <p class="timeline-location"><span class="visually-hidden">Location: </span>Remote</p>
+        <p class="timeline-role">Owner</p>
         <p class="timeline-desc">
-          Consulting practice focused on designing systems and processes, conducting applied research, and collaborating with teams to solve meaningful technical challenges.
+          Independent consulting practice focused on designing systems and processes, conducting applied research, and collaborating with teams to solve meaningful technical challenges.
         </p>
       </li>
 
       <li class="timeline-item">
         <div class="timeline-header">
-          <div>
-            <h3 class="timeline-role">Co-Founder · Collective Administrator</h3>
-            <p class="timeline-company"><a href="https://specollective.org">Sustainable Progress and Equality Collective</a></p>
-          </div>
-          <p class="timeline-date"><span class="visually-hidden">Dates: </span>Jun 2020 — Present</p>
+          <h3 class="timeline-org"><a href="https://specollective.org">Sustainable Progress and Equality Collective</a></h3>
+          <p class="timeline-meta">
+            <span class="visually-hidden">Location: </span>United States ·
+            <span class="visually-hidden">Dates: </span>Jun 2020 &mdash; Present
+          </p>
         </div>
-        <p class="timeline-location"><span class="visually-hidden">Location: </span>United States</p>
+        <p class="timeline-role">Co-Founder &amp; Collective Administrator</p>
         <ul class="timeline-highlights" role="list">
-          <li>Co-founded and lead a collective that has channeled over $300K into open-source projects and career training for underrepresented communities. Grew the organization from a founding team to a network of contributors and partners.</li>
+          <li>Co-founded and lead a collective that has channeled over $300K into open-source projects and career training for underrepresented communities, growing it from a founding team to a network of contributors and partners.</li>
           <li>Established a two-year partnership with the RAND Corporation's Center to Advance Racial Equity Policy (CAREP), leading content development across microcredentials, socio-cultural gaming, and a research intern program that placed 6 of 12 participants into tech roles.</li>
           <li>Personally donated $80K to fund job opportunities for underrepresented individuals entering the tech sector.</li>
           <li>Prototyped a cross-platform desktop app for tracking user activity for academic research and digital inclusion impact studies.</li>
@@ -91,13 +112,13 @@ description: "Resume for Joe Torreggiani: executive summary, professional experi
 
       <li class="timeline-item">
         <div class="timeline-header">
-          <div>
-            <h3 class="timeline-role">Staff Software Engineer</h3>
-            <p class="timeline-company"><a href="https://squareup.com">Square</a> · Full-time</p>
-          </div>
-          <p class="timeline-date"><span class="visually-hidden">Dates: </span>Sep 2020 — Feb 2026</p>
+          <h3 class="timeline-org"><a href="https://squareup.com">Square</a></h3>
+          <p class="timeline-meta">
+            <span class="visually-hidden">Location: </span>Remote ·
+            <span class="visually-hidden">Dates: </span>Sep 2020 &mdash; Feb 2026
+          </p>
         </div>
-        <p class="timeline-location"><span class="visually-hidden">Location: </span>Remote</p>
+        <p class="timeline-role">Staff Software Engineer</p>
         <ul class="timeline-highlights" role="list">
           <li>Led critical projects in the Payroll domain, including API architecture, performance optimization, and data-driven experimentation.</li>
           <li>Led a team of 3 engineers to rebuild the Run Payroll page from legacy JavaScript to TypeScript React and Protobuf APIs, reducing page load times from 20+ seconds to under 3 seconds for strategic sellers.</li>
@@ -108,13 +129,13 @@ description: "Resume for Joe Torreggiani: executive summary, professional experi
 
       <li class="timeline-item">
         <div class="timeline-header">
-          <div>
-            <h3 class="timeline-role">Senior Software Engineer / Engineering Manager</h3>
-            <p class="timeline-company"><a href="https://www.artemisag.com">Artemis</a> · Full-time</p>
-          </div>
-          <p class="timeline-date"><span class="visually-hidden">Dates: </span>Jan 2018 — Aug 2020</p>
+          <h3 class="timeline-org"><a href="https://www.artemisag.com">Artemis</a></h3>
+          <p class="timeline-meta">
+            <span class="visually-hidden">Location: </span>Remote ·
+            <span class="visually-hidden">Dates: </span>Jan 2018 &mdash; Aug 2020
+          </p>
         </div>
-        <p class="timeline-location"><span class="visually-hidden">Location: </span>Remote</p>
+        <p class="timeline-role">Senior Software Engineer / Engineering Manager</p>
         <ul class="timeline-highlights" role="list">
           <li>Led development of a mobile application portal for a virtual agronomy platform, from requirements gathering through deployment and maintenance.</li>
           <li>Led a team of 10 engineers, created an open-source state management library, and drove modernization of the React frontend and Rails backend APIs.</li>
@@ -123,13 +144,13 @@ description: "Resume for Joe Torreggiani: executive summary, professional experi
 
       <li class="timeline-item">
         <div class="timeline-header">
-          <div>
-            <h3 class="timeline-role">Software Engineer</h3>
-            <p class="timeline-company">Verba Software</p>
-          </div>
-          <p class="timeline-date"><span class="visually-hidden">Dates: </span>Feb 2015 — Dec 2017</p>
+          <h3 class="timeline-org">Verba Software</h3>
+          <p class="timeline-meta">
+            <span class="visually-hidden">Location: </span>San Francisco Bay Area ·
+            <span class="visually-hidden">Dates: </span>Feb 2015 &mdash; Dec 2017
+          </p>
         </div>
-        <p class="timeline-location"><span class="visually-hidden">Location: </span>San Francisco Bay Area</p>
+        <p class="timeline-role">Software Engineer</p>
         <ul class="timeline-highlights" role="list">
           <li>Integrated a digital course material service provider with a leading enterprise student information system, automating manual reconciliation for university accounts receivable departments.</li>
         </ul>
@@ -137,13 +158,13 @@ description: "Resume for Joe Torreggiani: executive summary, professional experi
 
       <li class="timeline-item">
         <div class="timeline-header">
-          <div>
-            <h3 class="timeline-role">Web Developer</h3>
-            <p class="timeline-company">Freelance · Full-time</p>
-          </div>
-          <p class="timeline-date"><span class="visually-hidden">Dates: </span>2013 — 2016</p>
+          <h3 class="timeline-org">Freelance</h3>
+          <p class="timeline-meta">
+            <span class="visually-hidden">Location: </span>Remote ·
+            <span class="visually-hidden">Dates: </span>2013 &mdash; 2016
+          </p>
         </div>
-        <p class="timeline-location"><span class="visually-hidden">Location: </span>Remote</p>
+        <p class="timeline-role">Web Developer</p>
         <ul class="timeline-highlights" role="list">
           <li>Developed an automated call-center service for a Fortune 500 pharmaceutical company's product release, delivered two months ahead of schedule and $15K under budget.</li>
           <li>Guest lecturer on environmental physics and sustainable technologies at the State University of New York at Albany.</li>
@@ -152,28 +173,20 @@ description: "Resume for Joe Torreggiani: executive summary, professional experi
 
       <li class="timeline-item">
         <div class="timeline-header">
-          <div>
-            <h3 class="timeline-role">Web Developer</h3>
-            <p class="timeline-company">Key Construction Services</p>
-          </div>
-          <p class="timeline-date"><span class="visually-hidden">Dates: </span>2013 — 2015</p>
+          <h3 class="timeline-org">Key Construction Services</h3>
+          <p class="timeline-meta">
+            <span class="visually-hidden">Location: </span>Poughkeepsie, New York ·
+            <span class="visually-hidden">Dates: </span>2012 &mdash; 2015
+          </p>
         </div>
-        <p class="timeline-location"><span class="visually-hidden">Location: </span>Poughkeepsie, New York</p>
+
+        <p class="timeline-role">Web Developer <span class="timeline-role-date">2013 &mdash; 2015</span></p>
         <ul class="timeline-highlights" role="list">
           <li>Built a web-based construction management application for equipment inventory and labor allocation, including a drag-and-drop project board for scheduling crews between sites.</li>
           <li>Modernized the equipment inventory system with a web-based database and barcode tags.</li>
         </ul>
-      </li>
 
-      <li class="timeline-item">
-        <div class="timeline-header">
-          <div>
-            <h3 class="timeline-role">Project Management Assistant</h3>
-            <p class="timeline-company">Key Construction Services</p>
-          </div>
-          <p class="timeline-date"><span class="visually-hidden">Dates: </span>2012 — 2013</p>
-        </div>
-        <p class="timeline-location"><span class="visually-hidden">Location: </span>Poughkeepsie, New York</p>
+        <p class="timeline-role timeline-role--subsequent">Project Management Assistant <span class="timeline-role-date">2012 &mdash; 2013</span></p>
         <ul class="timeline-highlights" role="list">
           <li>Supported the lead project manager across multiple multimillion-dollar construction projects, auditing change management processes and assisting with quality assurance.</li>
           <li>Wrote a New York State EPA-compliant spill prevention plan mandated to protect an endangered turtle species near a construction site.</li>
@@ -185,29 +198,29 @@ description: "Resume for Joe Torreggiani: executive summary, professional experi
 
 <section class="section section--alt" id="resume-education" aria-labelledby="resume-education-heading">
   <div class="container container--narrow">
-    <h2 class="section-heading" id="resume-education-heading">Education</h2>
+    <h2 class="section-heading resume-section-heading" id="resume-education-heading">Education</h2>
 
     <ol class="timeline" role="list">
       <li class="timeline-item">
         <div class="timeline-header">
-          <div>
-            <h3 class="timeline-role">Back-End Web Development</h3>
-            <p class="timeline-company">General Assembly</p>
-          </div>
-          <p class="timeline-date"><span class="visually-hidden">Dates: </span>2013</p>
+          <h3 class="timeline-org">General Assembly</h3>
+          <p class="timeline-meta">
+            <span class="visually-hidden">Location: </span>New York, New York ·
+            <span class="visually-hidden">Dates: </span>2013
+          </p>
         </div>
-        <p class="timeline-location"><span class="visually-hidden">Location: </span>New York, New York</p>
+        <p class="timeline-role">Back-End Web Development</p>
       </li>
 
       <li class="timeline-item">
         <div class="timeline-header">
-          <div>
-            <h3 class="timeline-role">B.A. History, minor in Philosophy</h3>
-            <p class="timeline-company">The College of Saint Rose</p>
-          </div>
-          <p class="timeline-date"><span class="visually-hidden">Dates: </span>2007 — 2010</p>
+          <h3 class="timeline-org">The College of Saint Rose</h3>
+          <p class="timeline-meta">
+            <span class="visually-hidden">Location: </span>Albany, New York ·
+            <span class="visually-hidden">Dates: </span>2007 &mdash; 2010
+          </p>
         </div>
-        <p class="timeline-location"><span class="visually-hidden">Location: </span>Albany, New York</p>
+        <p class="timeline-role">B.A. History, minor in Philosophy</p>
         <ul class="timeline-highlights" role="list">
           <li>Graduated magna cum laude, 3.79 GPA; Outstanding Senior in History Award.</li>
           <li>Phi Alpha Theta National History Honor Society; Phi Sigma Tau International Philosophy Honor Society.</li>
@@ -217,21 +230,7 @@ description: "Resume for Joe Torreggiani: executive summary, professional experi
   </div>
 </section>
 
-<section class="section" id="resume-skills" aria-labelledby="resume-skills-heading">
-  <div class="container container--narrow">
-    <h2 class="section-heading" id="resume-skills-heading">Skills</h2>
-    <ul class="timeline-highlights" role="list">
-      <li>Full-stack engineering — Ruby, TypeScript, React, Elixir</li>
-      <li>Systems architecture &amp; API design</li>
-      <li>Performance optimization &amp; data migrations</li>
-      <li>A/B experimentation &amp; data-driven development</li>
-      <li>Engineering management &amp; mentoring</li>
-      <li>Public speaking &amp; technical writing</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section section--alt" id="resume-contact" aria-labelledby="resume-contact-heading">
+<section class="section" id="resume-contact" aria-labelledby="resume-contact-heading">
   <div class="container container--narrow page-cta">
     <h2 class="section-heading" id="resume-contact-heading">Interested in working together?</h2>
     <p><a href="{{ site.baseurl }}/#contact" class="btn btn-primary">Get in touch</a></p>

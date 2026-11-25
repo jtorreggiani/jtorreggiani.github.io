@@ -1015,44 +1015,61 @@ p, li {
   border-bottom: none;
 }
 
+/* Each entry reads the way a printed resume does: organisation first with
+   location and dates on the same baseline, then the role, then the bullets. */
 .timeline-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: baseline;
   gap: var(--space-sm);
-  margin-bottom: var(--space-xs);
-}
-
-.timeline-role {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--color-text);
   margin-bottom: 0.15rem;
 }
 
-.timeline-company {
-  font-size: 0.95rem;
-  color: var(--color-text-secondary);
+.timeline-org {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text);
 }
 
-.timeline-company a {
-  color: var(--color-primary);
+.timeline-org a {
+  color: var(--color-text);
 }
 
-.timeline-date {
+.timeline-org a:hover {
+  color: var(--color-primary-light);
+}
+
+.timeline-meta {
   font-size: 0.8rem;
   color: var(--color-text-muted);
   white-space: nowrap;
   font-weight: 500;
   letter-spacing: 0.01em;
   flex-shrink: 0;
-  padding-top: 0.2rem;
+  text-align: right;
 }
 
-.timeline-location {
-  font-size: 0.8rem;
-  color: var(--color-text-muted);
+.timeline-role {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
   margin-bottom: var(--space-sm);
+}
+
+/* A second (or later) role at the same organisation. */
+.timeline-role--subsequent {
+  margin-top: var(--space-md);
+}
+
+.timeline-role-date {
+  font-weight: 500;
+  color: var(--color-text-muted);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.timeline-role-date::before {
+  content: '· ';
 }
 
 .timeline-desc {
@@ -1102,11 +1119,13 @@ p, li {
 
   .timeline-header {
     flex-direction: column;
-    gap: 0.25rem;
+    align-items: flex-start;
+    gap: 0.15rem;
   }
 
-  .timeline-date {
-    padding-top: 0;
+  .timeline-meta {
+    text-align: left;
+    white-space: normal;
   }
 }
 
@@ -1482,11 +1501,76 @@ html.js.reveal-enabled .section.revealed {
   color: var(--color-primary);
 }
 
+/* Resume section headings sit left with a full-width rule, the way printed
+   resume section dividers do, instead of the site's centred display heading. */
+.resume-section-heading {
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--color-border-strong);
+}
+
+.resume-section-heading::after {
+  display: none;
+}
+
+.resume-headline {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+/* The summary is left-aligned running prose even though the header block it
+   used to live in is centred. */
 .resume-summary {
   text-align: left;
   color: var(--color-text-secondary);
   margin: 0 auto;
   max-width: 42rem;
+}
+
+/* Core Skills: a label column and a comma-separated list, like the skills
+   block on a printed resume. */
+.resume-skills {
+  margin: 0;
+}
+
+.resume-skill-group {
+  display: grid;
+  grid-template-columns: 11rem 1fr;
+  gap: var(--space-sm);
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.resume-skill-group:first-child {
+  padding-top: 0;
+}
+
+.resume-skill-group:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.resume-skills dt {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  padding-top: 0.15rem;
+}
+
+.resume-skills dd {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
 }
 
 /* The in-page TOC defaults to the wide container; on narrow pages it has to
@@ -1545,5 +1629,10 @@ html.js.reveal-enabled .section.revealed {
 @media (max-width: 768px) {
   .resume-contact {
     gap: var(--space-sm) var(--space-md);
+  }
+
+  .resume-skill-group {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
   }
 }
